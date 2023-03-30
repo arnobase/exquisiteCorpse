@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  cargo_contract:
+    build: .
+    container_name: phat2meet_tioneb
+    volumes:
+      - ".:/root/contracts"
+    restart: always
+    tty: true
